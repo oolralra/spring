@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /spring.war
+    destination: /home/ec2-user/tomcat/webapps/
+  - source: /TestXMLFile.xml
+    destination: /home/ec2-user/tomcat/webapps/
+    
+hooks:
+  AfterInstall:
+    - location: server_start.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: server_stop.sh
+      timeout: 300
+      runas: root 
