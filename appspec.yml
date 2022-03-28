@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: /spring.war
+  - source: /TestControllerWebApp.war
     destination: /home/ec2-user/tomcat/webapps/
   - source: /TestXMLFile.xml
     destination: /home/ec2-user/tomcat/webapps/
