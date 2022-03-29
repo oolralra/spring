@@ -13,7 +13,7 @@ phases:
       - echo Build completed
 artifacts:
   files:
-    - *.war
+    - /*.war
     - scripts/server_start.sh
     - scripts/server_stop.sh
     - TestXMLFile.xml
